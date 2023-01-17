@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <img src="instantgpttext.png" alt="Instant GPT" style="width:220px;height:35px;margin-top:30px;margin-bottom:20px;" class="center">
+    <form id="api-key-form">
+      <label for="api-key-input">To start using the assistant, please enter your OpenAI API key</label><br>
+      <a href="https://beta.openai.com/account/api-keys" id="api-link" target="_blank">Get API Key here</a>
+      <input type="text" id="api-key-input" name="api-key" placeholder="API Key" required><br>
+      <button type="submit">Submit</button>
+    </form>
+    <form id="chat-form" style="display: none;">
+      <div class="input-container">
+        <input type="text" id="chat-input" name="question" autofocus required></textarea>
+        <button type="submit-chat">
+          <img src="send.png" alt="Instant GPT" style="width:30px;height:30px;" class="center">
+        </button>
+      </div>
+      </form>
+    <div id="chat-response"></div>
+    <form id="settings-form" style="display: none;">
+      <label for="setting1-input">API Key:</label><br>
+      <input type="text" id="setting1-input" name="setting1"><br>
+      <label for="setting2-input">Max Tokens:</label><br>
+      <input type="number" id="setting2-input" name="setting2" required><br>
+      <label for="setting3-input">Model:</label><br>
+      <input type="text" id="setting3-input" name="setting3" required><br>
+      <label for="setting4-input">Temperature:</label><br>
+      <input type="number" id="setting4-input" name="setting4" required><br>
+      <label for="setting5-input">Top_p:</label><br>
+      <input type="number" id="setting5-input" name="setting5" required><br>
+      <a href="https://beta.openai.com/docs/introduction" id="api-link" target="_blank">Learn more about these parameters<br><br></a>
+      <button type="submit">Update</button>
+    </form>
+    <img src="settings.png" id="settings-link" alt="Settings" class="settings-link">
+    <script src="popup.js"></script>
+  </body>
+</html>

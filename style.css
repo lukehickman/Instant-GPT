@@ -1,0 +1,164 @@
+html {
+    height: 550px;
+    width: 600px;
+}
+
+body {
+    font-family: Corbel;
+    margin: 0;
+    padding: 0;
+    background: #34343b;
+  }
+  
+  h1 {
+    font-family: system-ui;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  
+  form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 1px;
+  }
+  
+  .input-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #40414f;
+    border-radius: 2px;
+    background: #4e4f59;
+    font-size: 1.3em;
+    color: white;
+    box-shadow: 0 0 5pt 0.5pt #222228;
+    outline: none;
+    padding-right: 50px;
+  }
+  
+  input[type="number"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #40414f;
+    border-radius: 2px;
+    background: #4e4f59;
+    font-size: 1.3em;
+    color: white;
+    box-shadow: 0 0 5pt 0.5pt #222228;
+    outline: none;
+    padding-right: 50px;
+  }
+
+  button[type="submit"] {
+    width: 25%;
+    background-color: #00ff8c;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+
+  button[type="submit-chat"] {
+    background-color: #23803a00;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 3px;
+  }
+  
+  #chat-response {
+    font-family: Corbel;
+    display: none;
+    width: 90%;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 1.4em;
+  }
+
+  .settings-link {
+    height: 30px;
+    width: 30px;
+    margin:10px;
+    position: fixed;
+    bottom:0;
+    right: 0;
+  }
+
+  #api-link {
+    color: rgb(146, 146, 146);
+  }
+
+  #setting1-input {
+    font-size: 1em;
+  }
+
+  #api-key-input {
+    font-size: 1em;
+  }
+
+  .center {
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .conversation-row {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.message-container {
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.user-message {
+  color: rgb(144, 144, 144);
+}
+
+.gpt-message {
+  border: 1px solid #8e8ea0;
+  border-radius: 4px;
+}
+
+.message-text {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.message-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
