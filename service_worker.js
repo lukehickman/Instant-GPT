@@ -76,5 +76,9 @@ async function summarize(selectedText, apiKey, prompt) {
         })
     });
     const json = await response.json();
-    return json.choices[0].text;
+    try {
+        return json.choices[0].text;
+    } catch (error) {
+        return data.error.message;
+    }
 }
